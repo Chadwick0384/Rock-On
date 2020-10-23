@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock On!!</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="sequencer">
+        <div class="guitar-track">
+           <div class="controls">
+               <h1>Guitar</h1>
+               <button data-track="0" class="mute guitar-volume">
+                   <i class="fas fa-volume-mute"></i>
+               </button>
+               <select name="guitar-select" id="guitar-select">
+                   <option value="./Guitar B/110 bpm/HMLead110d-01.wav">Lead Guitar 1</option>
+                   <option value="./Guitar B/110 bpm/HMLead110d-02.wav">Lead Guitar 2</option>
+                   <option value="./Guitar B/110 bpm/HMLead110d-03.wav">Lead Guitar 3</option>
+                   <option value="./Guitar B/110 bpm/HMLead110d-04.wav">Lead Guitar 4</option>
+                   <option value="./Guitar B/110 bpm/HMLead110d-05.wav">Lead Guitar 5</option>
+               </select>
+           </div>
+            <div class="guitar">
+                <div class="pad guitar-pad b0"></div>
+                <div class="pad guitar-pad b1"></div>
+                <div class="pad guitar-pad b2"></div>
+                <div class="pad guitar-pad b3"></div>
+                <div class="pad guitar-pad b4"></div>
+                <div class="pad guitar-pad b5"></div>
+                <div class="pad guitar-pad b6"></div>
+                <div class="pad guitar-pad b7"></div>
+                <div class="pad guitar-pad b8"></div>
+                <div class="pad guitar-pad b9"></div>
+            </div>
+        </div>
+        <div class="chug-track">
+            <div class="controls">
+                <h1>Chugs</h1>
+                <button data-track="1" class="mute chug-volume">
+                    <i class="fas fa-volume-mute"></i>
+                </button>
+                <select name="chug-select" id="chug-select">
+                    <option value="./Guitar B/Chugs A/HMRhyA Chug-A.wav">Chug A</option>
+                    <option value="./Guitar B/Chugs A/HMRhyA Chug-C.wav">Chug B</option>
+                    <option value="./Guitar B/Chugs A/HMRhyA Chug-D Hi.wav">Chug C Hi</option>
+                    <option value="./Guitar B/Chugs A/HMRhyA Chug-D Lo.wav">Chug D lo</option>
+                    <option value="./Guitar B/Chugs A/HMRhyA Chug-E.wav">Chug E</option>
+                </select>
+            </div>
+             <div class="chug">
+                 <div class="pad chug-pad b0"></div>
+                 <div class="pad chug-pad b1"></div>
+                 <div class="pad chug-pad b2"></div>
+                 <div class="pad chug-pad b3"></div>
+                 <div class="pad chug-pad b4"></div>
+                 <div class="pad chug-pad b5"></div>
+                 <div class="pad chug-pad b6"></div>
+                 <div class="pad chug-pad b7"></div>
+                 <div class="pad chug-pad b8"></div>
+                 <div class="pad chug-pad b9"></div>
+             </div>
+         </div>
+         <div class="powerchord-track">
+            <div class="controls">
+                <h1>Powerchords</h1>
+                <button data-track="2" class="mute powerchord-volume">
+                    <i class="fas fa-volume-mute"></i>
+                </button>
+                <select name="powerchord-select" id="powerchord-select">
+                    <option value="./Guitar B/Powerchords A/HMRhyA Powerchord-A.wav">Powerchord A</option>
+                    <option value="./Guitar B/Powerchords A/HMRhyA Powerchord-B.wav">Powerchord B</option>
+                    <option value="./Guitar B/Powerchords A/HMRhyA Powerchord-C.wav">Powerchord C</option>
+                    <option value="./Guitar B/Powerchords A/HMRhyA Powerchord-D Hi.wav">Powerchord D Hi</option>
+                    <option value="./Guitar B/Powerchords A/HMRhyA Powerchord-D Lo.wav"></option>
+                </select>
+            </div>
+             <div class="powerchord">
+                 <div class="pad powerchord-pad b0"></div>
+                 <div class="pad powerchord-pad b1"></div>
+                 <div class="pad powerchord-pad b2"></div>
+                 <div class="pad powerchord-pad b3"></div>
+                 <div class="pad powerchord-pad b4"></div>
+                 <div class="pad powerchord-pad b5"></div>
+                 <div class="pad powerchord-pad b6"></div>
+                 <div class="pad powerchord-pad b7"></div>
+                 <div class="pad powerchord-pad b8"></div>
+                 <div class="pad powerchord-pad b9"></div>
+             </div>
+        </div>
+        <button class="play">Play</button>
+    </div>
+    <audio class="guitar-sound" src="./Guitar B/110 bpm/HMLead110d-02.wav"></audio>
+    <audio class="chug-sound" src="./Guitar B/Chugs A/HMRhyA Chug-A.wav"></audio>
+    <audio class="powerchord-sound" src="./Guitar B/Powerchords A/HMRhyA Powerchord-A.wav"></audio>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ==" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
