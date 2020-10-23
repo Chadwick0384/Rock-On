@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Rocker&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +7,17 @@
 }
 
 body {
-  font-family: sans-serif;
-  background: linear-gradient(#2e2f30, #242629);
+  font-family: "New Rocker", cursive, sans-serif;
+  background: linear-gradient(#132d47, #1a2b49);
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 5rem;
+  color: white;
+}
+
+h2 {
+  font-size: 2.5rem;
   padding-right: 0.5rem;
   color: white;
 }
@@ -106,9 +113,10 @@ svg {
   font-size: 1.5rem;
   border: none;
   color: white;
-  background: rgb(104, 103, 103);
+  background: rgb(75, 74, 74);
   cursor: pointer;
   margin-top: 3rem;
+  font-family: "New Rocker", cursive, sans-serif;
 }
 
 select {
@@ -131,6 +139,7 @@ select {
   }
 }
 
+/*Media Screen*/
 @media screen and (max-width: 768px) {
   .guitar-pad,
   .chug-pad,
@@ -147,6 +156,9 @@ select {
     padding: 0.2rem;
   }
   h1 {
-    font-size: 12px;
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1rem;
   }
 }
