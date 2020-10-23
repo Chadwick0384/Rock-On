@@ -1,6 +1,6 @@
 # Rock-On
 
-This JS project is best used on a desktop/laptop and is not fully optimized for mobile, but it can be used in landscape mode.  
+This JS project is best used on a desktop/laptop and is not fully optimized for mobile, but it can still be used on a mobile phone by zooming in and out.  
 
 How to use:
 1. App has a play/stop, sound selector and mute button.
