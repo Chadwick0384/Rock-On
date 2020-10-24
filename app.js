@@ -6,6 +6,7 @@ class GuitarKit {
         this.currentChug = './Guitar B/110 bpm/Chugs A/HMRhyA Chug-A.wav';
         this.currentPowerchord = 'Guitar B/110 bpm/Powerchords A/HMRhyA Powerchord-A.wav';
         this.guitarAudio = document.querySelector('.guitar-sound');
+        this.rhythmAudio = document.querySelector('.rhythm-sound');
         this.chugAudio = document.querySelector('.chug-sound');
         this.powerchordAudio = document.querySelector('.powerchord-sound');
         this.index = 0;
@@ -30,6 +31,9 @@ class GuitarKit {
                 //Check each sound
                 if (bar.classList.contains("guitar-pad")) {
                     this.guitarAudio.play();
+                }
+                if (bar.classList.contains("rhythm-pad")) {
+                    this.rhythmAudio.play();
                 }
                 if (bar.classList.contains("chug-pad")) {
                     this.chugAudio.currentTime = 0;
@@ -78,6 +82,9 @@ class GuitarKit {
             case "guitar-select":
                 this.guitarAudio.src = selectionValue;
                 break;
+            case "rhythm-select":
+                this.rhythmAudio.src = selectionValue;
+                break;
             case "chug-select":
                 this.chugAudio.src = selectionValue;
                 break;
@@ -95,9 +102,12 @@ class GuitarKit {
                     this.guitarAudio.volume = 0;
                     break;
                 case "1":
-                    this.chugAudio.volume = 0;
+                    this.rhythmAudio.volume = 0;
                     break;
                 case "2":
+                    this.chugAudio.volume = 0;
+                    break;
+                case "3":
                     this.powerchordAudio.volume = 0;
                     break;
             }
@@ -107,9 +117,12 @@ class GuitarKit {
                 this.guitarAudio.volume = 1;
                 break;
             case "1":
-                this.chugAudio.volume = 1;
+                this.rhythmAudio.volume = 1;
                 break;
             case "2":
+                this.chugAudio.volume = 1;
+                break;
+            case "3":
                 this.powerchordAudio.volume = 1;
                 break;
           }  

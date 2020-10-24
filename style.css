@@ -44,6 +44,10 @@ svg {
   background: rgb(59, 100, 180);
 }
 
+.rhythm-pad.active {
+  background: rgb(126, 32, 129);
+}
+
 .chug-pad.active {
   background: rgb(199, 73, 14);
 }
@@ -54,7 +58,8 @@ svg {
 
 .guitar-pad,
 .chug-pad,
-.powerchord-pad {
+.powerchord-pad,
+.rhythm-pad {
   width: 5rem;
   height: 5rem;
   margin: 1rem 0.5rem;
@@ -64,6 +69,10 @@ svg {
 
 .guitar-pad {
   background: rgb(122, 145, 185);
+}
+
+.rhythm-pad {
+  background: rgb(132, 86, 134);
 }
 
 .chug-pad {
@@ -76,7 +85,8 @@ svg {
 
 .guitar-track,
 .chug-track,
-.powerchord-track {
+.powerchord-track,
+.rhythm-track {
   display: flex;
   align-items: center;
   width: 80%;
@@ -86,6 +96,7 @@ svg {
 
 .guitar,
 .chug,
+.rhythm,
 .powerchord {
   display: flex;
 }
